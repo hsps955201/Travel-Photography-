@@ -10,7 +10,8 @@
 
 ### 網頁開發簡介
 >* 目前是設計讓使用者用fb登入，在index.html頁面會顯示目前熱門景點，旁邊拉條有其他連結功能，也可點擊左上角上傳照片。
-(https://i.imgur.com/lwRlxkv.png)
+>
+>![](https://i.imgur.com/lwRlxkv.png)
 >(index.html頁面)
 
 * 在upload頁面，使用者選擇照片，填入欄位所需資訊。在這裡最重要的地方就是選擇是”即時影像”或是”作品集”。
