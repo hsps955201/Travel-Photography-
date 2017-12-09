@@ -10,11 +10,11 @@
 
 ### 網頁開發簡介
 * 目前是設計讓使用者用fb登入，在index.html頁面會顯示目前熱門景點，旁邊拉條有其他連結功能，也可點擊左上角上傳照片。
- ![](https://i.imgur.com/lwRlxkv.png)
+![](https://i.imgur.com/lwRlxkv.png)
 (index.html頁面)
 
 * 在upload頁面，使用者選擇照片，填入欄位所需資訊。在這裡最重要的地方就是選擇是”即時影像”或是”作品集”。即時影像目前設計會讓他在24小時內消失，會有這種設計是因為有些景色(如日出，星空…等)諸如此類有時效性的景色，可能不久就消失了，所以特別分類出來。
- ![](https://i.imgur.com/MVSLwB8.png)
+![](https://i.imgur.com/MVSLwB8.png)
 
 (upload.html頁面)
 
@@ -24,7 +24,7 @@
 (map.html頁面)
 
 * 可從map.html頁面看到其他使用者分享的攝影點，目前測試中，故尚未加上照片。
- ![](https://i.imgur.com/qjxtVf8.png)
+![](https://i.imgur.com/qjxtVf8.png)
 
 (map.html頁面)
 
