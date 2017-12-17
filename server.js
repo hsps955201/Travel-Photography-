@@ -96,6 +96,21 @@ var storage =   multer.diskStorage({
 var upload = multer({ storage : storage}).single('userPhoto');
 router.post('/upload',function (req,res){
    upload(req,res,function(err) {
+    var gm = require('gm')//install gm
+      , imageMagick = gm.subClass({ imageMagick : true });//install imagemagick
+    var path = req.file.path;
+     imageMagick(path)
+    .resize('150!',150,) //加('!') 150*150！//size
+    .autoOrient()
+    .write('public/assets/uploadcompress/' + 'compress' + req.file.filename , function(err){ //save compress image to uploadcompress
+     if (err) {
+        console.log(err);
+        res.end();
+       }
+    });
+    var compresspath = __dirname + 'public/assets/uploadcomoress/' + 'compress' + req.file.filename; //get compresspath
+    console.log(compresspath);
+
        console.log(req.body)
        path = req.file.path.slice(6)
        console.log(path)
@@ -114,6 +129,7 @@ router.post('/upload',function (req,res){
            if (err) throw err;
 	         db.collection(db_collect).insertOne({
            "path": path,
+           "compresspath" :compresspath,
            "user": user,
            "topic":topic,
            "time":time,
